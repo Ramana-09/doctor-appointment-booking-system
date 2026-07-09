@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Doctors List</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="navbar">
+    <h3>🏥 Doctor Appointment</h3>
+    <div class="nav-links">
+        <a href="doctors.html">Doctors</a>
+        <a href="my-appointments.html">My Appointments</a>
+        <a href="#" onclick="logout()">Logout</a>
+    </div>
+</div>
+
+<div class="page-content">
+    <h2 style="margin-bottom: 20px;">Available Doctors</h2>
+    <div id="doctorsList"></div>
+</div>
+
+<script src="js/api.js"></script>
+<script src="js/doctors.js"></script>
+</body>
+</html>

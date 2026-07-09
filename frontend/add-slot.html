@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manage Slots</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="navbar">
+    <h3>🏥 Doctor Appointment</h3>
+    <div class="nav-links">
+        <a href="add-slot.html">Manage Slots</a>
+        <a href="#" onclick="logout()">Logout</a>
+    </div>
+</div>
+
+<div class="page-content">
+    <div class="card">
+        <h3 style="margin-bottom: 15px;">Add New Slot</h3>
+        <div id="msgBox"></div>
+
+        <form id="addSlotForm">
+            <label>Date</label>
+            <input type="date" id="date" required>
+
+            <label>Start Time</label>
+            <input type="time" id="startTime" required>
+
+            <label>End Time</label>
+            <input type="time" id="endTime" required>
+
+            <button type="submit">Add Slot</button>
+        </form>
+    </div>
+
+    <h2 style="margin: 25px 0 15px;">Your Slots</h2>
+    <div id="slotsList"></div>
+</div>
+
+<script src="js/api.js"></script>
+<script src="js/add-slot.js"></script>
+</body>
+</html>
